@@ -3,49 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - PayLoop</title>
+    <title>PayLoop: Contas e Boletos em Dia</title>
     <style>
+        /* Estilos gerais do corpo da página */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f5f7fa;
-            color: #0D253F;
+            padding: 0;
+            background-color: #F5F7FA; /* Cinza Suave PayLoop */
+            color: #0D253F; /* Azul Marinho PayLoop */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
+        /* Container principal para centralizar o conteúdo */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #FFFFFF; /* Branco PayLoop */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            flex-grow: 1;
         }
-        h1, h2 {
+
+        /* Estilos do cabeçalho */
+        header {
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #0D253F;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #1EBEA5; /* Turquesa PayLoop */
+            margin-top: 5px;
+        }
+
+        /* Estilos das seções */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
             color: #0D253F;
             border-bottom: 2px solid #1EBEA5;
             padding-bottom: 10px;
+            margin-top: 0;
         }
-        h1 {
-            text-align: center;
+
+        /* Estilos da lista de funcionalidades */
+        .features-list {
+            list-style: none;
+            padding: 0;
         }
-        p, li {
-            font-size: 16px;
+
+        .features-list li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
         }
-        strong {
-            color: #0D253F;
+
+        .features-list .icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            color: #1EBEA5;
+            padding-top: 2px;
         }
+
+        /* Estilos do rodapé */
         footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
+            padding: 20px;
+            font-size: 0.9em;
             color: #888;
+            width: 100%;
+            box-sizing: border-box;
         }
-        a {
+
+        footer a {
             color: #1EBEA5;
             text-decoration: none;
+            font-weight: bold;
         }
-        a:hover {
+
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
@@ -53,95 +106,53 @@
 <body>
     <div class="container">
         <header>
-            <h1>Política de Privacidade do PayLoop</h1>
+            <h1>PayLoop</h1>
+            <p>Nunca mais pague juros. Organize e pague suas contas com um toque.</p>
         </header>
 
         <main>
-            <p><strong>Última atualização:</strong> 6 de Julho de 2025</p>
-
             <section>
-                <h2>1. Introdução</h2>
-                <p>Bem-vindo ao PayLoop. Sua privacidade é inegociável para nós. Esta Política de Privacidade explica quais informações coletamos, como as usamos e as medidas que tomamos para protegê-las. Ao usar o PayLoop, você concorda com a coleta e uso de informações de acordo com esta política.</p>
+                <h2>Sobre o App</h2>
+                <p>Cansado de perder o vencimento de boletos e pagar juros desnecessários? O PayLoop é o seu novo assistente financeiro pessoal, projetado para ser a maneira mais simples e inteligente de gerenciar suas contas. Com uma interface limpa e focada, o PayLoop elimina a desorganização e te dá o controle total sobre suas finanças.</p>
             </section>
 
             <section>
-                <h2>2. Informações que Coletamos</h2>
-                <p>Coletamos informações para fornecer e melhorar o serviço para você. Os tipos de informações são:</p>
-                <ul>
-                    <li><strong>Informações Fornecidas por Você:</strong>
-                        <ul>
-                            <li><strong>Dados das Contas:</strong> Título, valor, data de vencimento, código de barras e anotações que você insere manualmente.</li>
-                            <li><strong>Arquivos de Contas:</strong> Imagens (via câmera ou galeria) ou arquivos PDF dos seus boletos que você nos fornece para a extração automática de dados. O acesso à câmera e galeria só ocorre com sua permissão explícita.</li>
-                        </ul>
+                <h2>Recursos Mágicos</h2>
+                <ul class="features-list">
+                    <li>
+                        <span class="icon">✨</span>
+                        <div>
+                            <strong>Extração Inteligente de Contas:</strong> Esqueça a digitação manual! Aponte a câmera para um boleto ou anexe um PDF e veja o PayLoop preencher todos os dados para você em segundos.
+                        </div>
                     </li>
-                    <li><strong>Informações de Autenticação e Backup:</strong>
-                        <ul>
-                            <li>Ao optar por fazer login com o Google, coletamos informações básicas do seu perfil (nome, endereço de e-mail e URL da foto) para criar sua conta e permitir a funcionalidade de backup em nuvem. Esta função é opcional e visa sua conveniência e segurança.</li>
-                        </ul>
+                    <li>
+                        <span class="icon">📚</span>
+                        <div>
+                            <strong>Modo Carnê Exclusivo:</strong> Cadastre todas as parcelas de um carnê de uma só vez. Organize seu ano inteiro com apenas um scan.
+                        </div>
                     </li>
-                    <li><strong>Informações de Configuração do App:</strong>
-                        <ul>
-                            <li>Salvamos localmente no seu dispositivo, via `shared_preferences`, suas configurações de preferência, como o dia de início do seu ciclo de pagamento.</li>
-                        </ul>
+                    <li>
+                        <span class="icon">🔔</span>
+                        <div>
+                            <strong>Lembretes que Funcionam:</strong> Configure lembretes personalizados e nunca mais seja pego de surpresa. Garantimos que você seja avisado no momento certo.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">☁️</span>
+                        <div>
+                            <strong>Sincronização Segura na Nuvem:</strong> Faça login com sua conta do Google para manter um backup seguro de todas as suas contas. Trocou de celular? Seus dados estarão lá.
+                        </div>
                     </li>
                 </ul>
-            </section>
-
-            <section>
-                <h2>3. Como Usamos Suas Informações</h2>
-                <p>Usamos as informações coletadas para as seguintes finalidades:</p>
-                <ul>
-                    <li><strong>Para Fornecer o Serviço Principal:</strong> Organizar suas contas, exibir seus status (pendente, paga, próxima) e, o mais importante, agendar e enviar lembretes de vencimento.</li>
-                    <li><strong>Extração de Dados (OCR):</strong> Processamos as imagens ou PDFs de boletos que você envia usando tecnologias de reconhecimento de texto (como o Google ML Kit Text Recognition) para preencher os dados da conta para você, evitando a digitação manual.</li>
-                    <li><strong>Autenticação e Sincronização em Nuvem:</strong> Usamos o Google Sign-In e o Firebase (Cloud Firestore) para autenticar seu acesso e para realizar um backup seguro dos seus dados na nuvem. Isso permite que você acesse suas contas em múltiplos dispositivos.</li>
-                    <li><strong>Persistência Local:</strong> Suas contas são salvas em um banco de dados local (SQLite) no seu dispositivo para garantir que o aplicativo funcione perfeitamente mesmo offline.</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h2>4. Segurança dos Dados</h2>
-                <p>A segurança dos seus dados é nossa prioridade. Implementamos as seguintes medidas:</p>
-                <ul>
-                    <li><strong>Isolamento de Dados na Nuvem:</strong> Utilizamos as regras de segurança do Firebase Firestore para garantir que cada usuário só possa ler e escrever seus próprios dados. Nenhuma informação de um usuário é acessível por outro.</li>
-                    <li><strong>Armazenamento Seguro:</strong> Seus dados são armazenados de forma segura tanto localmente no seu dispositivo quanto na infraestrutura segura do Google Cloud.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>5. Funcionalidades Futuras (Automação por E-mail)</h2>
-                <p>Conforme nosso Roadmap de Desenvolvimento, planejamos introduzir uma funcionalidade de automação de contas por e-mail. Somos transparentes sobre como isso funcionará:</p>
-                <ul>
-                    <li>A funcionalidade será <strong>totalmente opcional</strong>.</li>
-                    <li>Ofereceremos duas abordagens: encaminhamento manual de e-mails para um endereço exclusivo seu do PayLoop ou conexão direta com sua conta Google.</li>
-                    <li>No caso da conexão direta, o aplicativo solicitará permissões mínimas (escopo `gmail.readonly`) e apenas para ler e-mails de remetentes específicos que você autorizar.</li>
-                    <li>Toda a lógica será claramente explicada na tela de consentimento do Google e detalhada nesta Política de Privacidade quando a funcionalidade for lançada.</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h2>6. Seus Direitos e Controle</h2>
-                <p>Você tem total controle sobre seus dados no PayLoop:</p>
-                <ul>
-                    <li>Você pode visualizar, editar e excluir suas contas a qualquer momento dentro do aplicativo.</li>
-                    <li>Você pode arquivar contas pagas para manter sua lista organizada, sem perder o histórico para futuros relatórios.</li>
-                    <li>Se você usa o login com Google, pode revogar o acesso do PayLoop à sua conta a qualquer momento através das configurações de segurança da sua Conta Google.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>7. Alterações a Esta Política de Privacidade</h2>
-                <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página. É aconselhável que você revise esta página periodicamente para quaisquer alterações.</p>
-            </section>
-
-            <section>
-                <h2>8. Contato</h2>
-                <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco pelo e-mail: <a href="mailto:glaucodev01@gmail.com">glaucodev01@gmail.com</a></p>
             </section>
         </main>
-
-        <footer>
-            <p>&copy; 2025 PayLoop. Todos os direitos reservados.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>
+            &copy; 2025 PayLoop. Todos os direitos reservados. | 
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        </p>
+    </footer>
 </body>
 </html>
