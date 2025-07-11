@@ -22,10 +22,10 @@
         .container {
             max-width: 900px;
             margin: 40px auto;
-            padding: 20px 40px;
+            padding: 40px;
             background-color: #FFFFFF; /* Branco PayLoop */
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px_12px rgba(0,0,0,0.08);
             flex-grow: 1;
         }
 
@@ -33,12 +33,21 @@
         header {
             text-align: center;
             border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* <<< NOVO: Estilo para o ícone do app >>> */
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 15px;
+            border-radius: 22%; /* Cantos arredondados para combinar com ícones Android */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             color: #0D253F;
             margin: 0;
         }
@@ -48,6 +57,21 @@
             color: #1EBEA5; /* Turquesa PayLoop */
             margin-top: 5px;
             font-weight: 500;
+        }
+
+        /* <<< NOVO: Estilos para os botões de download >>> */
+        .download-buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .play-store-badge {
+            height: 60px;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .play-store-badge:hover {
+            transform: scale(1.05);
         }
 
         /* Estilos das seções */
@@ -120,8 +144,14 @@
 <body>
     <div class="container">
         <header>
+            <img src="PayLoop.png" alt="Ícone do App PayLoop" class="app-icon">
             <h1>PayLoop</h1>
             <p>Suas Contas no Piloto Automático. Sua vida financeira, organizada.</p>
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=net.glaucomv.payloop" target="_blank">
+                    <img src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" alt="Disponível no Google Play" class="play-store-badge">
+                </a>
+            </div>
         </header>
 
         <main>
@@ -172,6 +202,17 @@
                     </li>
                 </ul>
             </section>
+            
+            <section>
+                <h2>Pronto para recuperar sua paz de espírito?</h2>
+                <p>Deixe o trabalho chato com a gente e foque no que realmente importa. Baixe o PayLoop e coloque suas contas no piloto automático.</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=net.glaucomv.payloop" target="_blank">
+                        <img src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" alt="Disponível no Google Play" class="play-store-badge">
+                    </a>
+                </div>
+            </section>
+
         </main>
     </div>
 
